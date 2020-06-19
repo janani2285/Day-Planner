@@ -29,8 +29,7 @@ $(function () {
             var desc = localStorage.getItem(id);
 
             if (desc != null) {
-                id = "#" + id;
-                $(id).children("textarea").val(desc);
+              $(this).children("textarea").val(desc);
             }
         });
 
