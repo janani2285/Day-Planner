@@ -1,7 +1,8 @@
 $(function () {
     //Displays current date
     var today = moment();
-    var todayFormat = today.format("dddd, MMMM Do YYYY");
+
+    var todayFormat = today.format("dddd, MMMM Do");
 
     $("#currentDay").text(todayFormat);
 
@@ -36,49 +37,79 @@ $(function () {
 
             var momentTime = moment();
             if (hour === "9AM") {
-                var time = "9:00"
-                var splitTime = time.split(/:/)
-                momentTime.hours(splitTime[0]).minutes(splitTime[1]).seconds(0).milliseconds(0);
+              
+                if(9 === momentTime.hour()){
+                    $(this).parent().addClass("row time-block present");
+                }else if(9 < momentTime.hour()){
+                    $(this).parent().addClass("row time-block past");
+                }else if(9 > momentTime.hour()){
+                    $(this).parent().addClass("row time-block future");
+                }                
+                
             } else if (hour === "10AM") {
-                var time = "10:00"
-                var splitTime = time.split(/:/)
-                momentTime.hours(splitTime[0]).minutes(splitTime[1]).seconds(0).milliseconds(0);
+                if(10 === momentTime.hour()){
+                    $(this).parent().addClass("row time-block present");
+                }else if(10 < momentTime.hour()){
+                    $(this).parent().addClass("row time-block past");
+                }else if(10 > momentTime.hour()){
+                    $(this).parent().addClass("row time-block future");
+                }  
             } else if (hour === "11AM") {
-                var time = "11:00"
-                var splitTime = time.split(/:/)
-                momentTime.hours(splitTime[0]).minutes(splitTime[1]).seconds(0).milliseconds(0);
+                if(11 === momentTime.hour()){
+                    $(this).parent().addClass("row time-block present");
+                }else if(11 < momentTime.hour()){
+                    $(this).parent().addClass("row time-block past");
+                }else if(11 > momentTime.hour()){
+                    $(this).parent().addClass("row time-block future");
+                }  
             } else if (hour === "12PM") {
-                var time = "12:00"
-                var splitTime = time.split(/:/)
-                momentTime.hours(splitTime[0]).minutes(splitTime[1]).seconds(0).milliseconds(0);
+                if(12 === momentTime.hour()){
+                    $(this).parent().addClass("row time-block present");
+                }else if(12 < momentTime.hour()){
+                    $(this).parent().addClass("row time-block past");
+                }else if(12 > momentTime.hour()){
+                    $(this).parent().addClass("row time-block future");
+                }  
             } else if (hour === "1PM") {
-                var time = "13:00"
-                var splitTime = time.split(/:/)
-                momentTime.hours(splitTime[0]).minutes(splitTime[1]).seconds(0).milliseconds(0);
+                if(13 === momentTime.hour()){
+                    $(this).parent().addClass("row time-block present");
+                }else if(13 < momentTime.hour()){
+                    $(this).parent().addClass("row time-block past");
+                }else if(13 > momentTime.hour()){
+                    $(this).parent().addClass("row time-block future");
+                }  
             } else if (hour === "2PM") {
-                var time = "14:00"
-                var splitTime = time.split(/:/)
-                momentTime.hours(splitTime[0]).minutes(splitTime[1]).seconds(0).milliseconds(0);
+                if(14 === momentTime.hour()){
+                    $(this).parent().addClass("row time-block present");
+                }else if(14 < momentTime.hour()){
+                    $(this).parent().addClass("row time-block past");
+                }else if(14 > momentTime.hour()){
+                    $(this).parent().addClass("row time-block future");
+                }  
             } else if (hour === "3PM") {
-                var time = "15:00"
-                var splitTime = time.split(/:/)
-                momentTime.hours(splitTime[0]).minutes(splitTime[1]).seconds(0).milliseconds(0);
+                if(15 === momentTime.hour()){
+                    $(this).parent().addClass("row time-block present");
+                }else if(15 < momentTime.hour()){
+                    $(this).parent().addClass("row time-block past");
+                }else if(15 > momentTime.hour()){
+                    $(this).parent().addClass("row time-block future");
+                }  
             } else if (hour === "4PM") {
-                var time = "16:00"
-                var splitTime = time.split(/:/)
-                momentTime.hours(splitTime[0]).minutes(splitTime[1]).seconds(0).milliseconds(0);
+                if(16 === momentTime.hour()){
+                    $(this).parent().addClass("row time-block present");
+                }else if(16 < momentTime.hour()){
+                    $(this).parent().addClass("row time-block past");
+                }else if(16 > momentTime.hour()){
+                    $(this).parent().addClass("row time-block future");
+                }  
             } else if (hour === "5PM") {
-                var time = "16:00"
-                var splitTime = time.split(/:/)
-                momentTime.hours(splitTime[0]).minutes(splitTime[1]).seconds(0).milliseconds(0);
-            }
-
-            if (momentTime.isBefore(today)) {
-                $(this).parent().addClass("row time-block past");
-            } else if (momentTime.isAfter(today)) {
-                $(this).parent().addClass("row time-block future");
-            } else {
-                $(this).parent().addClass("row time-block present");
+                if(17 === momentTime.hour()){
+                    $(this).parent().addClass("row time-block present");
+                }else if(17 < momentTime.hour()){
+                    $(this).parent().addClass("row time-block past");
+                }else if(17 > momentTime.hour()){
+                    $(this).parent().addClass("row time-block future");
+                }  
             }
         });
     }
