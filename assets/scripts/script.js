@@ -37,79 +37,79 @@ $(function () {
 
             var momentTime = moment();
             if (hour === "9AM") {
-              
-                if(9 === momentTime.hour()){
+
+                if (9 === momentTime.hour()) {
                     $(this).parent().addClass("row time-block present");
-                }else if(9 < momentTime.hour()){
+                } else if (9 < momentTime.hour()) {
                     $(this).parent().addClass("row time-block past");
-                }else if(9 > momentTime.hour()){
+                } else if (9 > momentTime.hour()) {
                     $(this).parent().addClass("row time-block future");
-                }                
-                
+                }
+
             } else if (hour === "10AM") {
-                if(10 === momentTime.hour()){
+                if (10 === momentTime.hour()) {
                     $(this).parent().addClass("row time-block present");
-                }else if(10 < momentTime.hour()){
+                } else if (10 < momentTime.hour()) {
                     $(this).parent().addClass("row time-block past");
-                }else if(10 > momentTime.hour()){
+                } else if (10 > momentTime.hour()) {
                     $(this).parent().addClass("row time-block future");
-                }  
+                }
             } else if (hour === "11AM") {
-                if(11 === momentTime.hour()){
+                if (11 === momentTime.hour()) {
                     $(this).parent().addClass("row time-block present");
-                }else if(11 < momentTime.hour()){
+                } else if (11 < momentTime.hour()) {
                     $(this).parent().addClass("row time-block past");
-                }else if(11 > momentTime.hour()){
+                } else if (11 > momentTime.hour()) {
                     $(this).parent().addClass("row time-block future");
-                }  
+                }
             } else if (hour === "12PM") {
-                if(12 === momentTime.hour()){
+                if (12 === momentTime.hour()) {
                     $(this).parent().addClass("row time-block present");
-                }else if(12 < momentTime.hour()){
+                } else if (12 < momentTime.hour()) {
                     $(this).parent().addClass("row time-block past");
-                }else if(12 > momentTime.hour()){
+                } else if (12 > momentTime.hour()) {
                     $(this).parent().addClass("row time-block future");
-                }  
+                }
             } else if (hour === "1PM") {
-                if(13 === momentTime.hour()){
+                if (13 === momentTime.hour()) {
                     $(this).parent().addClass("row time-block present");
-                }else if(13 < momentTime.hour()){
+                } else if (13 < momentTime.hour()) {
                     $(this).parent().addClass("row time-block past");
-                }else if(13 > momentTime.hour()){
+                } else if (13 > momentTime.hour()) {
                     $(this).parent().addClass("row time-block future");
-                }  
+                }
             } else if (hour === "2PM") {
-                if(14 === momentTime.hour()){
+                if (14 === momentTime.hour()) {
                     $(this).parent().addClass("row time-block present");
-                }else if(14 < momentTime.hour()){
+                } else if (14 < momentTime.hour()) {
                     $(this).parent().addClass("row time-block past");
-                }else if(14 > momentTime.hour()){
+                } else if (14 > momentTime.hour()) {
                     $(this).parent().addClass("row time-block future");
-                }  
+                }
             } else if (hour === "3PM") {
-                if(15 === momentTime.hour()){
+                if (15 === momentTime.hour()) {
                     $(this).parent().addClass("row time-block present");
-                }else if(15 < momentTime.hour()){
+                } else if (15 < momentTime.hour()) {
                     $(this).parent().addClass("row time-block past");
-                }else if(15 > momentTime.hour()){
+                } else if (15 > momentTime.hour()) {
                     $(this).parent().addClass("row time-block future");
-                }  
+                }
             } else if (hour === "4PM") {
-                if(16 === momentTime.hour()){
+                if (16 === momentTime.hour()) {
                     $(this).parent().addClass("row time-block present");
-                }else if(16 < momentTime.hour()){
+                } else if (16 < momentTime.hour()) {
                     $(this).parent().addClass("row time-block past");
-                }else if(16 > momentTime.hour()){
+                } else if (16 > momentTime.hour()) {
                     $(this).parent().addClass("row time-block future");
-                }  
+                }
             } else if (hour === "5PM") {
-                if(17 === momentTime.hour()){
+                if (17 === momentTime.hour()) {
                     $(this).parent().addClass("row time-block present");
-                }else if(17 < momentTime.hour()){
+                } else if (17 < momentTime.hour()) {
                     $(this).parent().addClass("row time-block past");
-                }else if(17 > momentTime.hour()){
+                } else if (17 > momentTime.hour()) {
                     $(this).parent().addClass("row time-block future");
-                }  
+                }
             }
         });
     }

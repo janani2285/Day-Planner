@@ -18,5 +18,7 @@ https://janani2285.github.io/Day-Planner/
 
 ## Screenshots of the application
 
-<img src="assets/images/index.png">
+<img src="assets/images/img1.png">
+
+<img src="assets/images/activity.png">
 
