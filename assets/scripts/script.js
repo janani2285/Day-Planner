@@ -3,6 +3,8 @@ $(function () {
     var today = moment();
 
     var todayFormat = today.format("dddd, MMMM Do");
+    var date = today.date();
+    var month = today.month();
 
     $("#currentDay").text(todayFormat);
 
@@ -13,6 +15,11 @@ $(function () {
     //Function declaration: Save button's onclick event
     $(".saveBtn").on("click", function () {
         var hour = $(this).parent().attr("id");
+
+        /*Setting the key to local storage with date, month and hour to make sure, 
+        the activities are stored for the current day only and not to any other day.*/
+
+        hour = date + "-" + month + "-" + hour;
         var desc = $(this).parent().children("textarea").val();
         localStorage.setItem(hour, desc);
     });
@@ -21,6 +28,7 @@ $(function () {
     function onLoad() {
         $(".time-block").each(function () {
             var id = $(this).attr("id");
+            id = date + "-" + month + "-" + id;
             var desc = localStorage.getItem(id);
             if (desc != null) {
                 $(this).children("textarea").val(desc);
